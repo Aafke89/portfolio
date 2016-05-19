@@ -1,0 +1,16 @@
+.me {
+  background-color: $almost-white;
+  height: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 150px 20px;
+  .block-left {
+    width: 200px;
+    text-align: center;
+  }
+  .block-right {
+    width: 400px;
+    margin-left: 40px;
+  }
+}

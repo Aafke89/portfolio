@@ -1,0 +1,22 @@
+.skills {
+    text-align: center;
+    color: $almost-white;
+    padding: 20px;
+}
+
+.skill-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 35px;
+  // background-color: $almost-white;
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.skill-end {
+  background-color: $purplish-light;
+  padding: 10px;
+}

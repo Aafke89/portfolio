@@ -1,0 +1,12 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  i {
+    color: $blue-grey;
+    font-size: 60px;
+    margin-right: 30px;
+    &:hover {
+      color: #474E4E;
+    }
+  }
+}
