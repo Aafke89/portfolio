@@ -61,16 +61,23 @@ $(document).ready(function(){
         a[i - 1] = a[j];
         a[j] = x;
       }
+      shuffledWord = a.join("");
     }
 
     var myWord = null;
+    var shuffledWord = null;
 
     $(".info-list").mouseover( function(){
-      console.log("hover");
+     myWord = $(this).text();
+     var arrayWord = myWord.split("");
+     shuffle(arrayWord);
+     $(this).text(shuffledWord);
+     console.log(shuffledWord);
+   })
 
-      var myWord =
-      shuffle(this);
-  })
+    $(".info-list").mouseout( function(){
+     $(this).text(myWord);
+   })
 
 
 
