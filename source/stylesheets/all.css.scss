@@ -18,14 +18,19 @@
 
 body {
   // background-image: url("https://wallpaperscraft.com/image/space_universe_nebula_star_light_95356_1920x1080.jpg")
+  font-family: "Inconsolata";
 }
 
 h1, h2, h3 {
-  font-family: "Inconsolata"
+  font-family: "Inconsolata";
 }
 
 h2 {
-  margin: 60px 0px;
+  margin: 50px 0px;
+}
+
+body {
+  background-color: black;
 }
 
 .wrapper-contact{

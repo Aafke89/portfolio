@@ -1,0 +1,29 @@
+#banner {
+  // height: 400px;
+  background-image: url("https://scontent.xx.fbcdn.net/v/t1.0-9/12565536_1052478658105933_1177010508519186219_n.jpg?oh=ca1130b57f83d511fd0a378899b29c51&oe=57DE8213");
+  padding: 10px;
+  background-size: cover;
+  .letter {
+    color: $almost-white;
+    font-size: 200px;
+    width: 200px;
+    text-align: center;
+  }
+  .upper {
+    // background-color: black;
+    display: flex;
+    justify-content: space-around;
+  }
+  .down {
+    // background-color: black;
+    display: flex;
+    justify-content: space-around;
+  }
+  .fa-diamond {
+    transform: none;
+    transition: transform 2s ease;
+    &:hover {
+      transform: rotate(365deg);
+    }
+    }
+}
