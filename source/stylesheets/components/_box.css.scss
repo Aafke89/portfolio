@@ -64,13 +64,16 @@
 
 .projects {
   width: 420px;
-  height: 300px;
+  height: 340px;
   position: absolute;
   background-color: rgba(0,0,0,0.9);
   top: 60px;
   left: 30px;
   color: white;
-  padding: 0 20px;
+  padding: 20px;
+  h2 {
+    margin: 30px 0px;
+  }
   .projects-body {
     display: flex;
     justify-content: space-around;
@@ -80,31 +83,29 @@
       height: 85px;
     }
   }
+  .footer-projects {
+    margin: 30px 22px;
+  }
 
 }
 
 .contact {
-  width: 230px;
-  height: 60px;
+  width: 200px;
+  height: 130px;
   position: absolute;
-  background-color: gray;
+  background-color: rgba(251,251,251, 0.9);
   bottom: 20px;
   right: 20px;
+  padding: 20px;
 }
 
 .social-media {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 50px;
-    color: rgba(154, 150, 0, 0.87);
+    color: rgba(8, 8, 8, 0.87);
     i {
-      font-size: 40px;
-      color: rgba(154, 150, 0, 0.87);
-      margin: 0 10px;
+      font-size: 30px;
+      color: rgba(154, 154, 154, 0.6);
       &:hover {
-        color: yellow;
+        color: rgba(154, 154, 154, 0.9);
       }
     }
 }
@@ -119,7 +120,7 @@
   position: absolute;
   top: 36px;
   right: 20px;
-  padding: 20px;
+  padding: 20px 18px;
   ul {
     list-style: none;
     padding-left: 0;

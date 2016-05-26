@@ -1,7 +1,9 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require_tree .
-$(document).ready(function(){
+
+
+function closeBoxes(){
   // Hide boxes
   $(".cross-box").on("click", function(){
     $(this).parent().addClass("hidden");
@@ -13,6 +15,30 @@ $(document).ready(function(){
   $(".cross-box").mouseout(function(){
     $(this).attr('src', "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Runic_letter_gebo.svg/60px-Runic_letter_gebo.svg.png")
   });
+};
+
+
+
+
+
+
+$(document).ready(function(){
+  closeBoxes();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // Make active if clicked on box
   $(".box").on("click", function(){
     $(".box").removeClass("active");
@@ -53,6 +79,11 @@ $(document).ready(function(){
   });
 
     // Shuffle function
+    // This shuffles an array
+    // Make two variables for the original and the shuffled word
+    var myWord = null;
+    var shuffledWord = null;
+
     function shuffle(a) {
       var j, x, i;
       for (i = a.length; i; i -= 1) {
@@ -64,24 +95,72 @@ $(document).ready(function(){
       shuffledWord = a.join("");
     }
 
-    var myWord = null;
-    var shuffledWord = null;
-
-    $(".info-list").mouseover( function(){
-     myWord = $(this).text();
-     var arrayWord = myWord.split("");
+    function doShuffle(element){
+     var word = $(element).text();
+     var arrayWord = word.split("");
+     arrayWord.push(" ");
      shuffle(arrayWord);
-     $(this).text(shuffledWord);
-     console.log(shuffledWord);
-   })
 
-    $(".info-list").mouseout( function(){
-     $(this).text(myWord);
-   })
+     $(element).text(shuffledWord);
+   }
+
+   var shuffleId1 = null;
+   var shuffleId2 = null;
+
+   $(".info-list").mouseover( function(){
+    // myWord = $(this).text();
+    var element = this;
+
+    doShuffle(element);
+
+    shuffleId1 = setTimeout(function(){
+      doShuffle(element);
+    }, 200);
+
+    shuffleId2 = setTimeout(function(){
+      doShuffle(element);
+    }, 400);
+
+    setTimeout(function(){
+      var original = $(element).data('original');
+      $(element).text(original);
+    }, 650);
+  })
+
+   $(".box-info").mouseout( function(){
+    //cancel all shuffle timeout
+    clearTimeout(shuffleId1);
+    clearTimeout(shuffleId2);
+    var items = $(".info-list");
+    $.each(items, function() {
+      var original = $(this).data('original');
+      $(this).text(original);
+    });
+  })
+
+
+   // Projects: show info on hover
+
+   $(".project-refugapp").on("mouseover", function(){
+    $(this).css("border", "10px 10px 5px 0px rgba(125,0,125,0.75)");
+    $(".footer-projects").text("Refugapp");
+  })
+
+   $(".project-refugapp").on("mouseout", function(){
+    $(this).css("opacity", "1");
+  })
+
+   $(".project-sneakertours").on("mouseover", function(){
+    $(".footer-projects").text("Sneakertours");
+  })
+
+   $(".project-plankgasten").on("mouseover", function(){
+    $(".footer-projects").text("Plankgasten");
+  })
 
 
 
-  });
+ });
 
 
 
