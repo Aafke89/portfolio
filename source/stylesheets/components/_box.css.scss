@@ -27,7 +27,8 @@
 }
 
 .picture {
-  background-image: url("https://avatars.githubusercontent.com/u/6619254?v=3");
+  background-image: url(/images/aafke.jpg);
+  // background-image: url("https://avatars.githubusercontent.com/u/6619254?v=3");
   background-size: cover;
   width: 100px;
   height: 120px;
@@ -47,15 +48,15 @@
 
 .skills {
   width: 500px;
-  height: 200px;
+  height: 220px;
   position: absolute;
   background-color: rgba(0,0,0,0.9);
   top: 140px;
   left: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 80px;
+  // align-items: center;
+  padding: 20px 80px;
   ul {
     list-style: none;
     padding-left: 0;
@@ -114,7 +115,7 @@
   border: 1px solid black;
   position: relative;
   opacity: 0.8;
-  height: 150px;
+  height: 170px;
   width: 120px;
   background-color: white;
   position: absolute;
@@ -128,6 +129,10 @@
       }
   ul li:hover {
     font-style: cursive;
+  }
+  a {
+    text-decoration: none;
+    color: #333333;
   }
 }
 

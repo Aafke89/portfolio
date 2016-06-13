@@ -67,7 +67,7 @@ function projectsInfo(){
    $(".project-refugapp").on("mouseover", function(){
     $(".project-img").css("opacity", "0.6");
     $(this).css("opacity", "1");
-    $(".footer-projects").text("Refugapp is a project we set up during the Le Wagon Bootcamp. We are creating a platform to bring locals and refugees together by exchanging skills. ");
+    $(".footer-projects").text("Refugapp is a project we are working on right now. We are creating a platform to bring locals and refugees together by exchanging skills.");
   })
 
    $(".project-sneakertours").on("mouseover", function(){
@@ -172,4 +172,5 @@ $(document).ready(function(){
  //////// Other stuff to improve
  // Make nicer crosses
  // Closer look at skills
+ // Set this unicorn as a favicon: https://thenounproject.com/term/unicorn/9584/
 
