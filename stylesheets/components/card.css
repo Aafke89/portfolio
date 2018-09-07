@@ -1,0 +1,34 @@
+/* line 1, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/card.scss */
+.wrapper-cards {
+  padding-bottom: 90px;
+  text-align: center; }
+  /* line 5, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/card.scss */
+  .wrapper-cards h2 {
+    margin-bottom: 60px; }
+
+/* line 10, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/card.scss */
+.card {
+  padding: 0px 10px;
+  height: 300px;
+  background-size: cover;
+  color: black;
+  position: relative;
+  border: 1px solid black;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  /* line 22, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/card.scss */
+  .card .card-center {
+    text-align: center; }
+  /* line 25, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/card.scss */
+  .card i {
+    font-size: 150px; }

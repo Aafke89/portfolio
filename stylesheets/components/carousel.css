@@ -1,0 +1,27 @@
+/* line 1, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/carousel.scss */
+.carousel-inner .active.left {
+  left: -33%; }
+
+/* line 2, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/carousel.scss */
+.carousel-inner .active.right {
+  left: 33%; }
+
+/* line 3, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/carousel.scss */
+.carousel-inner .next {
+  left: 33%; }
+
+/* line 4, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/carousel.scss */
+.carousel-inner .prev {
+  left: -33%; }
+
+/* line 5, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/carousel.scss */
+.carousel-control.left {
+  background-image: none; }
+
+/* line 6, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/carousel.scss */
+.carousel-control.right {
+  background-image: none; }
+
+/* line 7, /Users/Aafke/code/Aafke89/portfolio_js/source/stylesheets/components/carousel.scss */
+.carousel-inner .item {
+  background: white; }
